@@ -3,17 +3,17 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useEffect } from 'react';
-import { Navbar } from './components/Navbar';
-import { Hero } from './components/Hero';
-import { About } from './components/About';
-import { Skills } from './components/Skills';
-import { Projects } from './components/Projects';
-import { Education } from './components/Education';
-import { Contact } from './components/Contact';
-import { Footer } from './components/Footer';
-import { ProjectDemoModal } from './components/ProjectDemoModal';
-import { Project } from './data/portfolioData';
+import { useState, useEffect } from 'react';
+import { Navbar } from './Navbar';
+import { Hero } from './Hero';
+import { About } from './About';
+import { Skills } from './Skills';
+import { Projects } from './Projects';
+import { Education } from './Education';
+import { Contact } from './Contact';
+import { Footer } from './Footer';
+import { ProjectDemoModal } from './ProjectDemoModal';
+import type { Project } from './portfolioData';
 
 export default function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -27,12 +27,10 @@ export default function App() {
 
       for (let i = sectionIds.length - 1; i >= 0; i--) {
         const el = document.getElementById(sectionIds[i]);
-        if (el) {
-          const top = el.offsetTop;
-          if (scrollPosition >= top) {
-            setActiveSection(sectionIds[i]);
-            break;
-          }
+
+        if (el && scrollPosition >= el.offsetTop) {
+          setActiveSection(sectionIds[i]);
+          break;
         }
       }
     };
@@ -43,10 +41,8 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#051424] text-slate-100 flex flex-col font-sans selection:bg-[#4cd7f6]/20 selection:text-[#4cd7f6]">
-      {/* Top Navigation */}
       <Navbar activeSection={activeSection} />
 
-      {/* Main Content Sections */}
       <main className="flex-1">
         <Hero />
         <About />
@@ -56,13 +52,11 @@ export default function App() {
         <Contact />
       </main>
 
-      {/* Footer */}
       <Footer />
 
-      {/* Interactive Project Simulator Modal */}
-      <ProjectDemoModal 
-        project={activeDemoProject} 
-        onClose={() => setActiveDemoProject(null)} 
+      <ProjectDemoModal
+        project={activeDemoProject}
+        onClose={() => setActiveDemoProject(null)}
       />
     </div>
   );
