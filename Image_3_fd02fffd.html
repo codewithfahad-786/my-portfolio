@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>Dr. Alex Vance | Lead ML Architect &amp; AI Researcher</title><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"inverse-primary":"#494bd6","inverse-on-surface":"#233143","on-secondary-fixed-variant":"#004e5c","primary-fixed":"#e1e0ff","on-error":"#690005","on-background":"#d4e4fa","surface-variant":"#273647","error-container":"#93000a","outline-variant":"#464554","on-primary-container":"#0d0096","on-error-container":"#ffdad6","on-tertiary-fixed-variant":"#005048","surface-container-high":"#1c2b3c","inverse-surface":"#d4e4fa","surface-container":"#122131","on-secondary-container":"#00424e","on-primary":"#1000a9","outline":"#908fa0","secondary-fixed-dim":"#4cd7f6","tertiary-container":"#00a392","on-surface-variant":"#c7c4d7","on-tertiary-fixed":"#00201c","background":"#051424","primary-fixed-dim":"#c0c1ff","secondary-fixed":"#acedff","surface-bright":"#2c3a4c","tertiary":"#4fdbc8","primary":"#c0c1ff","on-primary-fixed-variant":"#2f2ebe","surface-container-highest":"#273647","on-tertiary-container":"#00302a","on-tertiary":"#003731","surface-container-lowest":"#010f1f","tertiary-fixed":"#71f8e4","surface-tint":"#c0c1ff","on-secondary-fixed":"#001f26","surface":"#051424","surface-dim":"#051424","on-primary-fixed":"#07006c","error":"#ffb4ab","primary-container":"#8083ff","tertiary-fixed-dim":"#4fdbc8","on-secondary":"#003640","secondary":"#4cd7f6","on-surface":"#d4e4fa","surface-container-low":"#0d1c2d","secondary-container":"#03b5d3"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"gutter":"1.5rem","space-xl":"2.5rem","space-lg":"1.5rem","margin-lg":"5rem","gutter-lg":"2rem","space-xs":"0.25rem","margin":"1.5rem","space-md":"1rem","margin-md":"3rem","gutter-sm":"1rem","space-sm":"0.5rem"},fontFamily:{"body-sm":["Inter"],"mono-code":["JetBrains Mono"],"label-caps":["JetBrains Mono"],"headline-sm":["Plus Jakarta Sans"],"body-md":["Inter"],"headline-lg":["Plus Jakarta Sans"],"display-hero":["Plus Jakarta Sans"],"display-hero-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"label-badge":["JetBrains Mono"],"mono-metric":["JetBrains Mono"]},fontSize:{"body-sm":["13px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"mono-code":["14px",{"lineHeight":"22px","letterSpacing":"-0.01em","fontWeight":"400"}],"label-caps":["11px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-md":["15px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"400"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.025em","fontWeight":"600"}],"display-hero":["56px",{"lineHeight":"64px","letterSpacing":"-0.03em","fontWeight":"700"}],"display-hero-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"400"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"label-badge":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"500"}],"mono-metric":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"500"}]}}}};</script></head><body class="bg-background font-body-md text-on-background antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-4"><div class="flex items-center gap-space-md shrink-0"><img alt="ML Engineer Neural Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U8UVFXhVzz-yTOmGZsxyZujY_DqHCfl9m1lIfhym2da9ToB6Dn1Trxpw4odt4trraj-G71yyiE6ecsZOw6Qb-UFAvBZEdTyIeMCB2SgR81T-Z0aaODmEmqH2AC9PdC_7lhriqSXAt3X6Y7-dfBmFimW8cyfFziygy32Czf0GhSD-WRhX8L4zWaliQ3B1_oF8c0SoIU9UHYYleEgw0N0jVv33Yt51uJT5kfVXykdxw_7uRFSS2VDCmtJ6XW"/><div class="flex flex-col"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Alex Vance, PhD</span><span class="hidden sm:inline-flex items-center px-space-xs py-0.5 rounded-full bg-surface-container-high text-secondary font-label-badge text-label-badge">ML Systems &amp; LLMs</span></div></div></div><nav class="hidden xl:flex items-center gap-space-xs p-1 rounded-xl bg-surface-container/60" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a aria-current="page" class="px-3 py-1.5 transition-colors bg-primary-container text-on-primary-container font-semibold rounded-lg" data-path="home" href="#">Home</a><a class="px-3 py-1.5 text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors rounded-lg" data-path="about" href="#">About</a><a class="px-3 py-1.5 text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors rounded-lg" data-path="skills" href="#">Skills</a><a class="px-3 py-1.5 text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors rounded-lg" data-path="ml-projects" href="#">ML Projects</a><a class="px-3 py-1.5 text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors rounded-lg" data-path="ai-applications" href="#">AI Applications</a><a class="px-3 py-1.5 text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors rounded-lg" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md shrink-0"><div class="hidden md:flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1.5 rounded-xl"><a class="flex items-center gap-1.5 text-on-surface-variant hover:text-secondary font-label-caps text-label-caps transition-colors px-2 py-1" data-path="github-profile" href="#"><span class="material-symbols-outlined text-sm">code</span><span>GH</span><span class="px-1.5 py-0.2 rounded-full bg-surface-container-highest text-secondary-fixed">★ 3.8k</span></a><a class="flex items-center gap-1 text-on-surface-variant hover:text-secondary font-label-caps text-label-caps transition-colors px-2 py-1" data-path="linkedin-profile" href="#"><span class="material-symbols-outlined text-sm">share</span><span>IN</span></a></div><a class="hidden sm:inline-flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-primary-container text-on-primary-container font-label-caps text-label-caps hover:bg-primary transition-all shadow-[0_0_16px_rgba(128,131,255,0.25)]" data-path="schedule-chat" href="#"><span class="material-symbols-outlined text-base">calendar_month</span><span>Schedule Chat</span></a><div class="flex items-center gap-2 pl-2"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEDmLUcpYoYFK0lthnx6E8Trq3VqS1RTsnGF0poHg8IvEGqXTVmUQWKHM1WN-aCspdTAk9O-fcTnkPid6ms5ovR2yqUXDE5r6w1iPs5PhdvDU9HoTg-pUfrOIm1m-JxZ9gpxzYtS_jKhU6tryMeio_kg_SgeXB4CyxNVKE10YsRQWmsofmF7z-8QMygXHA1n_UAoCQD18XpFRFP57lstbP9Dkto1Fy-yF9U73_gPg7D3sYf3lJL_26AQ"/></div></div></div></header><main class="w-full pt-20 bg-background flex-1"><div class="flex flex-col w-full">
+<!-- Top Atmospheric Gradient & Grid -->
+<div class="relative w-full overflow-hidden pb-space-xl">
+<div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[900px] h-[550px] bg-gradient-to-b from-primary-container/20 via-secondary/10 to-transparent blur-3xl pointer-events-none rounded-full"></div>
+<div class="absolute top-24 right-10 w-96 h-96 bg-tertiary/10 blur-[100px] pointer-events-none rounded-full"></div>
+<!-- HERO CONTENT CONTAINER -->
+<div class="max-w-7xl mx-auto px-6 lg:px-12 pt-10 lg:pt-16">
+<!-- Overline Status Matrix -->
+<div class="flex flex-wrap items-center justify-between gap-4 mb-space-md">
+<div class="inline-flex items-center gap-space-xs px-3 py-1.5 rounded-full bg-surface-container-high/90 text-on-surface backdrop-blur-md shadow-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-ping"></span>
+<span class="w-2 h-2 rounded-full bg-tertiary -ml-3"></span>
+<span class="font-label-caps text-label-caps tracking-widest text-tertiary uppercase">Active Research</span>
+<span class="text-outline-variant font-mono-code text-xs">|</span>
+<span class="font-mono-code text-body-sm text-on-surface-variant">Cluster: 128x H100 SXM5 Under Synthesis</span>
+</div>
+<div class="hidden sm:flex items-center gap-3 font-mono-code text-body-sm text-on-surface-variant">
+<span class="inline-flex items-center gap-1 text-secondary"><span class="material-symbols-outlined text-sm">terminal</span>PyTorch 2.5 nightly</span>
+<span>•</span>
+<span class="inline-flex items-center gap-1 text-primary"><span class="material-symbols-outlined text-sm">bolt</span>FlashAttention-3</span>
+</div>
+</div>
+<!-- Main Asymmetric Hero Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-center mb-space-xl">
+<!-- Left: Narrative & Typography Hook -->
+<div class="lg:col-span-7 flex flex-col space-y-space-md">
+<h1 class="font-display-hero text-display-hero text-on-surface tracking-tight leading-tight">
+            Architecting <span class="bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text text-transparent">Scalable ML</span> &amp; Generative AI Systems
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+            Lead AI Systems Architect specializing in distributed multi-node transformer training, kernel optimization via Triton/CUDA, and low-latency inference pipelines servicing enterprise-scale foundation models.
+          </p>
+<!-- CTAs -->
+<div class="flex flex-wrap items-center gap-4 pt-2">
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-primary-container text-on-primary-container font-headline-sm text-body-md hover:bg-primary transition-all duration-200 shadow-xl shadow-primary-container/20 group" href="#projects">
+<span>Explore Research &amp; Projects</span>
+<span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-surface-container-high text-on-surface font-headline-sm text-body-md hover:bg-surface-variant transition-all duration-200 shadow-sm group" href="https://github.com" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-lg text-secondary">code_blocks</span>
+<span>View GitHub Repos</span>
+<span class="font-mono-code text-xs px-2 py-0.5 rounded-full bg-surface-container-highest text-secondary-fixed">★ 3.8k</span>
+</a>
+<a class="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors text-body-md font-body-md" href="#contact">
+<span class="material-symbols-outlined text-lg text-tertiary">calendar_clock</span>
+<span>Schedule Technical Call</span>
+</a>
+</div>
+<!-- Publication Citation Strip -->
+<div class="pt-4 flex items-center gap-3 font-mono-code text-body-sm text-outline">
+<span class="material-symbols-outlined text-primary text-base">verified</span>
+<span>NeurIPS • ICML • ICLR • ACL Senior Program Committee Member</span>
+</div>
+</div>
+<!-- Right: Visual Portrait & Model Architecture Focal Plane -->
+<div class="lg:col-span-5 relative">
+<div class="relative w-full aspect-[4/3] sm:aspect-square max-w-md mx-auto rounded-xl overflow-hidden bg-surface-container shadow-2xl">
+<!-- Photographic Artifact -->
+<img class="w-full h-full object-cover mix-blend-luminosity hover:mix-blend-normal transition-all duration-500 scale-100 hover:scale-105" data-alt="Dr. Alex Vance, machine learning architect in a nocturnal dark-mode compute operations center. Atmospheric cold blue and violet LED cluster racks illuminate the workspace. High-resolution cinematic portrait with clean glass reflections, technical holographic latency graph overlays, and sleek minimalist cyber-industrial aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRuAxHuuyzEgTNC0MmazZfIxCHRsU1UanUYZ6tZUSNUVaR9yyRduD8FWdfjo8dLkRx48z179TQD65FxT2Pi4DBYNarT7Yim9sIKsUwue1NoONvSscG6UBmm8n9_Jelq42byE6YrMk8tash1FPj_gI17dhhUW_ipi_xvtMtT4OE0642umokkzpE4QuSCYYmFl_5GhWWue4uOtHDVxNDtquvnGmIYA_WyQKSFllG7xv9B75U1wgJEk57Rw"/>
+<!-- Dynamic Gradient Scrim -->
+<div class="absolute inset-0 bg-gradient-to-t from-background via-surface-container/30 to-transparent"></div>
+<!-- Live Status HUD Badge -->
+<div class="absolute top-4 left-4 p-3 rounded-lg bg-surface-container-lowest/80 backdrop-blur-md shadow-lg flex items-center gap-3">
+<div class="w-3 h-3 rounded-full bg-tertiary animate-pulse"></div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface">NODE 0xFA48</span>
+<span class="font-mono-code text-body-sm text-tertiary">0.84ms P99 Latency</span>
+</div>
+</div>
+<!-- BibTeX Quick Citation Pill -->
+<div class="absolute bottom-4 right-4 left-4 p-3 rounded-lg bg-surface-container-high/90 backdrop-blur-md shadow-lg flex items-center justify-between">
+<div class="flex items-center gap-2 truncate">
+<span class="material-symbols-outlined text-primary text-base">article</span>
+<span class="font-mono-code text-body-sm text-on-surface truncate">Vance et al. "Sub-4bit Latent Attention"</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-primary-container/30 text-primary font-label-badge text-label-badge">2024</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Floating Metrics Quad-Grid -->
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-gutter mb-space-xl">
+<!-- Metric 1 -->
+<div class="p-6 rounded-xl bg-surface-container/70 backdrop-blur-lg hover:bg-surface-container-high/80 transition-all duration-300 shadow-md">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Scale &amp; Throughput</span>
+<span class="material-symbols-outlined text-secondary text-xl">dataset</span>
+</div>
+<div class="font-mono-metric text-mono-metric text-on-surface font-bold tracking-tight">42M+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1">Daily Inferences Across Production Clusters</div>
+<!-- Sparkline SVG -->
+<div class="mt-4 h-6 w-full">
+<svg class="w-full h-full text-secondary" preserveaspectratio="none" viewbox="0 0 100 24">
+<path d="M0,20 Q15,18 28,14 T55,10 T80,5 L100,2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+</svg>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="p-6 rounded-xl bg-surface-container/70 backdrop-blur-lg hover:bg-surface-container-high/80 transition-all duration-300 shadow-md">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-caps text-label-caps text-tertiary uppercase">High Availability</span>
+<span class="material-symbols-outlined text-tertiary text-xl">shield</span>
+</div>
+<div class="font-mono-metric text-mono-metric text-on-surface font-bold tracking-tight">99.94%</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1">SLA Uptime Across Multi-Region vLLM Pods</div>
+<div class="mt-4 h-6 w-full">
+<svg class="w-full h-full text-tertiary" preserveaspectratio="none" viewbox="0 0 100 24">
+<path d="M0,8 L20,8 L25,4 L30,8 L60,8 L65,12 L70,8 L100,8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+</svg>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="p-6 rounded-xl bg-surface-container/70 backdrop-blur-lg hover:bg-surface-container-high/80 transition-all duration-300 shadow-md">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-caps text-label-caps text-primary uppercase">Kernel Acceleration</span>
+<span class="material-symbols-outlined text-primary text-xl">speed</span>
+</div>
+<div class="font-mono-metric text-mono-metric text-on-surface font-bold tracking-tight">12x</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1">Latency Reduction via Custom Triton Kernels</div>
+<div class="mt-4 h-6 w-full">
+<svg class="w-full h-full text-primary" preserveaspectratio="none" viewbox="0 0 100 24">
+<path d="M0,22 C30,22 40,4 100,2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+</svg>
+</div>
+</div>
+<!-- Metric 4 -->
+<div class="p-6 rounded-xl bg-surface-container/70 backdrop-blur-lg hover:bg-surface-container-high/80 transition-all duration-300 shadow-md">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-caps text-label-caps text-secondary-fixed uppercase">Peer-Reviewed Impact</span>
+<span class="material-symbols-outlined text-secondary-fixed text-xl">auto_stories</span>
+</div>
+<div class="font-mono-metric text-mono-metric text-on-surface font-bold tracking-tight">8+ Papers</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1">NeurIPS &amp; ICML First-Author Publications</div>
+<div class="mt-4 flex items-center gap-1.5 font-label-badge text-label-badge text-secondary">
+<span class="material-symbols-outlined text-xs">format_quote</span>
+<span>2,400+ Citations Indexed</span>
+</div>
+</div>
+</div>
+<!-- Tech Stack Interactive Ticker Row -->
+<div class="p-4 rounded-xl bg-surface-container-low shadow-inner mb-space-xl overflow-hidden">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-3 px-2">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-primary">memory</span>
+            Core Hardware &amp; Inference Framework Fabric
+          </span>
+<span class="font-mono-code text-body-sm text-on-surface-variant">Validated for NVLink-4 / H100 SXM5 architectures</span>
+</div>
+<div class="flex flex-wrap items-center gap-2">
+<div class="px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface flex items-center gap-2 font-mono-code text-body-sm hover:bg-surface-variant transition-colors">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span>PyTorch 2.5</span>
+</div>
+<div class="px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface flex items-center gap-2 font-mono-code text-body-sm hover:bg-surface-variant transition-colors">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>JAX / Flax</span>
+</div>
+<div class="px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface flex items-center gap-2 font-mono-code text-body-sm hover:bg-surface-variant transition-colors">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span>CUDA 12.4</span>
+</div>
+<div class="px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface flex items-center gap-2 font-mono-code text-body-sm hover:bg-surface-variant transition-colors">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>OpenAI Triton</span>
+</div>
+<div class="px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface flex items-center gap-2 font-mono-code text-body-sm hover:bg-surface-variant transition-colors">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed"></span>
+<span>vLLM Engine</span>
+</div>
+<div class="px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface flex items-center gap-2 font-mono-code text-body-sm hover:bg-surface-variant transition-colors">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed"></span>
+<span>NVIDIA TensorRT-LLM</span>
+</div>
+<div class="px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface flex items-center gap-2 font-mono-code text-body-sm hover:bg-surface-variant transition-colors">
+<span class="w-2 h-2 rounded-full bg-primary-fixed"></span>
+<span>HuggingFace Accelerate</span>
+</div>
+<div class="px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface flex items-center gap-2 font-mono-code text-body-sm hover:bg-surface-variant transition-colors">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed-dim"></span>
+<span>Ray Train / Serve</span>
+</div>
+<div class="px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface flex items-center gap-2 font-mono-code text-body-sm hover:bg-surface-variant transition-colors">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span>Kubernetes Operator</span>
+</div>
+<div class="px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface flex items-center gap-2 font-mono-code text-body-sm hover:bg-surface-variant transition-colors">
+<span class="w-2 h-2 rounded-full bg-tertiary-container"></span>
+<span>DeepSpeed ZeRO-3</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- INTERACTIVE TERMINAL & LIVE BENCHMARK SECTION -->
+<section class="w-full bg-surface-container-lowest/60 py-space-xl">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-4">
+<div>
+<div class="flex items-center gap-2 font-label-caps text-label-caps text-secondary mb-1">
+<span class="material-symbols-outlined text-sm">terminal</span>
+<span>SYSTEM RUNTIME • TENSOR PARALLEL DISPATCH</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Interactive Execution Console</h2>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-4 py-2 rounded-lg bg-primary-container text-on-primary-container font-mono-code text-body-sm font-semibold transition-all shadow-sm" id="tab-code-btn" onclick="switchConsoleTab('code')">
+            distributed_inference.py
+          </button>
+<button class="px-4 py-2 rounded-lg bg-surface-container-high text-on-surface-variant hover:text-on-surface font-mono-code text-body-sm transition-all" id="tab-bench-btn" onclick="switchConsoleTab('bench')">
+            latency_profile.log
+          </button>
+</div>
+</div>
+<!-- Code & Bench Console Container -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter rounded-xl bg-surface-container-low overflow-hidden shadow-2xl">
+<!-- Main Code Sandbox Display -->
+<div class="lg:col-span-8 p-6 flex flex-col justify-between bg-surface-container-lowest/90 font-mono-code text-mono-code">
+<div class="flex items-center justify-between pb-4 mb-4 text-xs text-outline">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-error"></span>
+<span class="w-3 h-3 rounded-full bg-secondary-container"></span>
+<span class="w-3 h-3 rounded-full bg-tertiary"></span>
+<span class="ml-2 font-mono-code text-on-surface-variant">torchrun --nproc_per_node=8 distributed_tp.py</span>
+</div>
+<button class="hover:text-primary transition-colors flex items-center gap-1" onclick="navigator.clipboard?.writeText(document.getElementById('code-content').innerText)">
+<span class="material-symbols-outlined text-sm">content_copy</span>
+<span>Copy Module</span>
+</button>
+</div>
+<!-- Code Snippet Area -->
+<div class="space-y-1 text-on-surface overflow-x-auto pb-4" id="code-panel">
+<pre class="leading-relaxed" id="code-content"><span class="text-secondary font-semibold">import</span> torch
+<span class="text-secondary font-semibold">import</span> torch.distributed <span class="text-secondary font-semibold">as</span> dist
+<span class="text-secondary font-semibold">from</span> vllm.model_executor.layers.quantization <span class="text-secondary font-semibold">import</span> AWQLinearMethod
+<span class="text-secondary font-semibold">from</span> flash_attn.flash_attn_interface <span class="text-secondary font-semibold">import</span> flash_attn_func
+
+<span class="text-outline"># Dr. Vance Triton-Accelerated Tensor Parallel Block (8x H100)</span>
+<span class="text-primary font-semibold">class</span> <span class="text-tertiary font-bold">ParallelTransformerKernel</span>(torch.nn.Module):
+    <span class="text-secondary font-semibold">def</span> <span class="text-tertiary">__init__</span>(self, hidden_dim: <span class="text-secondary-fixed">int</span> = 8192, tp_world_size: <span class="text-secondary-fixed">int</span> = 8):
+        super().__init__()
+        self.tp_rank = dist.get_rank()
+        self.qkv_proj = AWQLinearMethod(hidden_dim, hidden_dim * 3 // tp_world_size)
+        self.o_proj = AWQLinearMethod(hidden_dim // tp_world_size, hidden_dim)
+
+    <span class="text-secondary font-semibold">def</span> <span class="text-tertiary">forward</span>(self, x: torch.Tensor, kv_cache=None) -&gt; torch.Tensor:
+        qkv = self.qkv_proj(x)
+        q, k, v = torch.chunk(qkv, 3, dim=-1)
+        
+        <span class="text-outline"># Zero-copy flash attention computation with FP8 accumulation</span>
+        attn_out = flash_attn_func(q, k, v, causal=<span class="text-primary">True</span>, softmax_scale=0.035)
+        local_out = self.o_proj(attn_out)
+        
+        <span class="text-outline"># Ring All-Reduce kernel over 900 GB/s NVLink inter-GPU bus</span>
+        dist.all_reduce(local_out, op=dist.ReduceOp.SUM)
+        <span class="text-secondary font-semibold">return</span> local_out + x</pre>
+</div>
+<!-- Benchmarks Panel (Initially hidden or integrated) -->
+<div class="hidden space-y-4 text-on-surface" id="bench-panel">
+<div class="text-tertiary font-label-caps text-label-caps">[CUDA PROFILER TIMINGS: BATCH_SIZE=64 • SEQ_LEN=4096]</div>
+<div class="space-y-3 font-mono-code text-body-sm">
+<div>
+<div class="flex justify-between text-xs mb-1">
+<span>Standard PyTorch Attention (Eager)</span>
+<span class="text-error font-semibold">18.42 ms / token</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-error h-full rounded-full w-[95%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-xs mb-1">
+<span>FlashAttention-2 Eager</span>
+<span class="text-secondary font-semibold">4.12 ms / token</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-[35%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-xs mb-1">
+<span class="text-tertiary font-bold">Vance Custom AWQ+FP8 Kernel (This Work)</span>
+<span class="text-tertiary font-bold">1.48 ms / token (12.4x Speedup)</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full w-[12%] animate-pulse"></div>
+</div>
+</div>
+</div>
+<div class="p-3 rounded bg-surface-container font-mono-code text-xs text-on-surface-variant">
+              Memory footprints: Peak VRAM lowered from 78.4 GB to 14.1 GB per device (-82.01%). Zero CUDA OOM detected across 10,000 synthetic test loops.
+            </div>
+</div>
+<div class="pt-4 border-t border-outline-variant/20 flex flex-wrap items-center justify-between gap-2 text-xs">
+<div class="flex items-center gap-2 text-tertiary">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span>All 8 Tensor-Parallel ranks synchronized</span>
+</div>
+<span class="text-outline font-mono-code">NVLink Transfer: 894.2 GB/s</span>
+</div>
+</div>
+<!-- Telemetry Graphs & Latency Radar -->
+<div class="lg:col-span-4 p-6 bg-surface-container flex flex-col justify-between space-y-6">
+<div>
+<div class="font-label-caps text-label-caps text-primary uppercase mb-1">Real-Time Telemetry</div>
+<div class="font-headline-sm text-headline-sm text-on-surface">Tensor Engine Specs</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Live metrics from distributed benchmark evaluation suite on 8x NVIDIA H100.</p>
+</div>
+<!-- Dynamic SVG Radial Gauge -->
+<div class="flex items-center justify-center p-4 rounded-xl bg-surface-container-high/60">
+<div class="relative w-36 h-36 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 100 100">
+<circle class="text-surface-variant fill-none" cx="50" cy="50" r="42" stroke="currentColor" stroke-width="8"></circle>
+<circle class="text-tertiary fill-none transition-all duration-1000" cx="50" cy="50" r="42" stroke="currentColor" stroke-dasharray="264" stroke-dashoffset="38" stroke-linecap="round" stroke-width="8"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="font-mono-metric text-headline-sm text-on-surface font-bold">85.6%</span>
+<span class="font-label-caps text-label-caps text-outline">MFU EFFICIENCY</span>
+</div>
+</div>
+</div>
+<!-- Mini telemetry diagnostics -->
+<div class="space-y-3 font-mono-code text-body-sm">
+<div class="flex justify-between items-center py-1.5 px-3 rounded-lg bg-surface-container-high">
+<span class="text-on-surface-variant">Time-To-First-Token</span>
+<span class="text-tertiary font-bold">14.2 ms</span>
+</div>
+<div class="flex justify-between items-center py-1.5 px-3 rounded-lg bg-surface-container-high">
+<span class="text-on-surface-variant">Throughput (tokens/s)</span>
+<span class="text-secondary font-bold">4,120 t/s</span>
+</div>
+<div class="flex justify-between items-center py-1.5 px-3 rounded-lg bg-surface-container-high">
+<span class="text-on-surface-variant">KV Cache Quantization</span>
+<span class="text-primary font-bold">FP8 E4M3</span>
+</div>
+</div>
+<a class="w-full text-center py-2.5 rounded-lg bg-surface-variant hover:bg-surface-bright text-on-surface font-label-caps text-label-caps uppercase transition-colors" href="https://github.com" rel="noopener" target="_blank">
+            Inspect Profiler Trace (.json)
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- QUICK HIGHLIGHTS SHOWCASE: 3 FLAGSHIP PROJECTS -->
+<section class="w-full py-space-xl" id="projects">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<!-- Section Title Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-4">
+<div>
+<div class="flex items-center gap-2 font-label-caps text-label-caps text-primary mb-1">
+<span class="material-symbols-outlined text-sm">rocket_launch</span>
+<span>PRODUCTION ARTIFACTS &amp; SYSTEMS RESEARCH</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Flagship Deployments</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          High-leverage engineering projects transforming theoretical deep learning into battle-tested, high-throughput software.
+        </p>
+</div>
+<!-- 3 Projects Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Flagship 1: LLM Quantization Engine -->
+<div class="flex flex-col justify-between rounded-xl bg-surface-container/70 backdrop-blur-md overflow-hidden hover:bg-surface-container-high/70 transition-all duration-300 shadow-xl group">
+<div>
+<!-- Project Visual -->
+<div class="relative h-48 w-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Technical visualization of neural network quantization and sparse matrix weight decomposition. Neon electric purple and deep indigo data arrays showing 4-bit precision matrix multiplication with glowing mathematical tensor coordinates on deep dark substrate." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAx6twAT2u3Uvz4HxO3MOx0iHJBtLZLj_t-7BhgYU7TempPg9vObCacgrSa90-aAm-salqU9XPl9ATP5VuSYCTxfIHbzoXy2ETgckKDRwkohPTi1q8nm92_UJ1RGb1lYpmXKSx20zYJj1VUZM9uRmLWlie4wsz20m1TR6LO_WNrY_VFZmBDq9uw8U58YUnwwMXR7hgx2G43cI5-t__C5lg5KuonIc_KSlEbYtPGtybvFP_hR9vLN__0Ig"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+<div class="absolute top-3 right-3 flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest/90 text-secondary font-label-caps text-label-caps flex items-center gap-1 backdrop-blur-md">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Live Demo
+                </span>
+</div>
+<div class="absolute bottom-3 left-4">
+<span class="px-2 py-0.5 rounded bg-primary-container text-on-primary-container font-label-badge text-label-badge font-bold">ENGINEERING</span>
+</div>
+</div>
+<!-- Content Area -->
+<div class="p-6">
+<div class="flex items-center justify-between text-xs text-outline mb-2 font-mono-code">
+<span>v3.4.1 Released</span>
+<span class="text-secondary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">star</span> 2.1k stars
+                </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                QuantForge: Sub-4bit LLM Quantization
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+                Asymmetric weight-activation quantizer achieving 99.4% perplexity retention on 70B models using custom Triton matrix kernels.
+              </p>
+<!-- Benchmarks Strip -->
+<div class="mt-4 p-3 rounded-lg bg-surface-container-low space-y-1.5 font-mono-code text-xs">
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Throughput Speedup</span>
+<span class="text-tertiary font-semibold">3.8x baseline</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">VRAM footprint</span>
+<span class="text-secondary font-semibold">16.4 GB (was 140 GB)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Action Buttons -->
+<div class="p-6 pt-0 flex items-center justify-between gap-3">
+<a class="flex-1 py-2 text-center rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-caps text-label-caps uppercase transition-colors" href="https://github.com" rel="noopener" target="_blank">
+              Repository
+            </a>
+<a class="flex-1 py-2 text-center rounded-lg bg-primary-container text-on-primary-container font-label-caps text-label-caps uppercase hover:bg-primary transition-colors" data-path="ml-projects" href="#">
+              Benchmark
+            </a>
+</div>
+</div>
+<!-- Flagship 2: Multimodal Medical Diagnosis Agent -->
+<div class="flex flex-col justify-between rounded-xl bg-surface-container/70 backdrop-blur-md overflow-hidden hover:bg-surface-container-high/70 transition-all duration-300 shadow-xl group">
+<div>
+<div class="relative h-48 w-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High-resolution clinical AI interface rendering showing 3D MRI brain scans paired with real-time transformer diagnostic attention heatmaps. Luminous teal contours, segmentation overlays, and clinical analytical telemetry on slate background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTroggKk6MRE2wAtUpDUyjXTUSAUDA-I3rgBToGMPKWImsgK52NvDXdJowXoD8LBkqE8Ymx95wBu8KE7FlBsA30RDWx8ugtpRe1caqndNVIEyHWzVJ_nCnwZvwAnYWIVVxhmZKEUuWNpTUlNIJdGQsF0OyXCCNdefYySxahAjUzY1JVOfQRYb-qIOaPG9jU5xZAzjz9bPNiUzf7tgJpBoNxsZ-grt9CfOd6SzeKf9Soj-HW_MIp7ffCA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+<div class="absolute top-3 right-3 flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest/90 text-tertiary font-label-caps text-label-caps flex items-center gap-1 backdrop-blur-md">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Clinical Trial
+                </span>
+</div>
+<div class="absolute bottom-3 left-4">
+<span class="px-2 py-0.5 rounded bg-tertiary-container text-on-tertiary-container font-label-badge text-label-badge font-bold">MULTIMODAL</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex items-center justify-between text-xs text-outline mb-2 font-mono-code">
+<span>Nature Medicine (In Review)</span>
+<span class="text-tertiary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">star</span> 1.2k stars
+                </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-tertiary transition-colors">
+                SynapseRx: Multimodal Medical Agent
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+                Zero-shot diagnostic reasoning across DICOM radiologic imagery, lab pathologies, and EHR clinical trajectories using structured tool use.
+              </p>
+<div class="mt-4 p-3 rounded-lg bg-surface-container-low space-y-1.5 font-mono-code text-xs">
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Diagnostic F1 Score</span>
+<span class="text-tertiary font-semibold">94.8% (SOTA)</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Hallucination Delta</span>
+<span class="text-secondary font-semibold">-74.2% vs GPT-4V</span>
+</div>
+</div>
+</div>
+</div>
+<div class="p-6 pt-0 flex items-center justify-between gap-3">
+<a class="flex-1 py-2 text-center rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-caps text-label-caps uppercase transition-colors" href="https://github.com" rel="noopener" target="_blank">
+              Weights
+            </a>
+<a class="flex-1 py-2 text-center rounded-lg bg-tertiary-container text-on-tertiary-container font-label-caps text-label-caps uppercase hover:bg-tertiary transition-colors" data-path="ai-applications" href="#">
+              Case Study
+            </a>
+</div>
+</div>
+<!-- Flagship 3: Real-Time Video Diffusion -->
+<div class="flex flex-col justify-between rounded-xl bg-surface-container/70 backdrop-blur-md overflow-hidden hover:bg-surface-container-high/70 transition-all duration-300 shadow-xl group">
+<div>
+<div class="relative h-48 w-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Abstract temporal latent diffusion representation showing cinematic high-speed motion vectors, fluid particle streamlines, and volumetric light rendering in shades of cyan, deep blue, and amber sparks on dark background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKESwhW--idk7yQp2pV12zf8Gv2Ny9xpsBAUMqUHmqU_THZG7FWiFAFmO2QBYLMUfUlvvkwAwUS7ri1wz2CDq02xqndpM574idxClEXvbLp2XG4sC9-uZgLI4iG8YXOgHJU66Da53lPKf75_0-zmXpEOt_2FwZ5QVXbJ5vbIXma4F3Rt5sXJQWXEGggrhEoGrZk_Cl-IZUGA_tgPM0-QSXW4_SC0DrXhjPVBMWQnPcRNN7KpAzgkdZVw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+<div class="absolute top-3 right-3 flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest/90 text-primary font-label-caps text-label-caps flex items-center gap-1 backdrop-blur-md">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span> 60 FPS Stream
+                </span>
+</div>
+<div class="absolute bottom-3 left-4">
+<span class="px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-badge text-label-badge font-bold">DIFFUSION</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex items-center justify-between text-xs text-outline mb-2 font-mono-code">
+<span>SIGGRAPH 2024</span>
+<span class="text-secondary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">star</span> 3.4k stars
+                </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors">
+                ChronoStream: Real-Time Video Diffusion
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+                First sub-20ms generative spatio-temporal video synthesis pipeline enabled by distilled consistency models and fused CUDA kernels.
+              </p>
+<div class="mt-4 p-3 rounded-lg bg-surface-container-low space-y-1.5 font-mono-code text-xs">
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Inference Frame Latency</span>
+<span class="text-secondary font-semibold">16.6ms @ 1080p</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">FID Temporal Consistency</span>
+<span class="text-tertiary font-semibold">4.12 score</span>
+</div>
+</div>
+</div>
+</div>
+<div class="p-6 pt-0 flex items-center justify-between gap-3">
+<a class="flex-1 py-2 text-center rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-caps text-label-caps uppercase transition-colors" href="https://github.com" rel="noopener" target="_blank">
+              Source Code
+            </a>
+<a class="flex-1 py-2 text-center rounded-lg bg-secondary-container text-on-secondary-container font-label-caps text-label-caps uppercase hover:bg-secondary transition-colors" data-path="ml-projects" href="#">
+              Playground
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ARCHITECTURAL PRINCIPLES / PHILOSOPHY -->
+<section class="w-full py-space-xl bg-surface-container-low/50">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-center">
+<div class="lg:col-span-5 space-y-space-md">
+<div class="flex items-center gap-2 font-label-caps text-label-caps text-tertiary">
+<span class="material-symbols-outlined text-sm">precision_manufacturing</span>
+<span>SYSTEM DESIGN DOCTRINE</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+            How I Build Frontier AI
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            State-of-the-art models are meaningless without deterministic, mathematically sound runtime architectures. My approach treats the compiler, the interconnect, and the latent math as a single unified machine.
+          </p>
+<div class="space-y-4 pt-2">
+<div class="flex items-start gap-4">
+<div class="p-2.5 rounded-lg bg-surface-container-high text-primary shrink-0">
+<span class="material-symbols-outlined">hub</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-body-md text-on-surface font-semibold">Zero Memory Waste</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Custom PagedAttention memory layouts and FP8/INT4 kv-cache quantizations to maximize batch capacity on GPU HBM3e.
+                </p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="p-2.5 rounded-lg bg-surface-container-high text-secondary shrink-0">
+<span class="material-symbols-outlined">layers</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-body-md text-on-surface font-semibold">Hardware-Aware Compilation</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Writing native Triton and CUDA kernels that eliminate kernel launch overhead and fuse matrix activations directly into SRAM.
+                </p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="p-2.5 rounded-lg bg-surface-container-high text-tertiary shrink-0">
+<span class="material-symbols-outlined">network_check</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-body-md text-on-surface font-semibold">Deterministic Parallelism</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Orchestrating Tensor, Pipeline, and Sequence Parallelism with custom collective communication topologies over InfiniBand networks.
+                </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Diagram Box -->
+<div class="lg:col-span-7 p-8 rounded-xl bg-surface-container-lowest/80 backdrop-blur-md shadow-2xl relative overflow-hidden">
+<div class="flex items-center justify-between mb-6 pb-4 border-b border-outline-variant/20">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">alt_route</span>
+<span class="font-headline-sm text-body-md text-on-surface">End-to-End Latency Topology</span>
+</div>
+<span class="font-mono-code text-xs px-2 py-1 rounded bg-surface-container-high text-tertiary">P99: 14.8ms</span>
+</div>
+<!-- Flowchart Visual -->
+<div class="space-y-4 font-mono-code text-body-sm">
+<!-- Stage 1 -->
+<div class="flex items-center justify-between p-3.5 rounded-lg bg-surface-container-high/80">
+<div class="flex items-center gap-3">
+<span class="w-6 h-6 rounded-full bg-primary/20 text-primary flex items-center justify-center text-xs font-bold">1</span>
+<span class="text-on-surface">Ray Cluster Ingress &amp; Tokenizer</span>
+</div>
+<span class="text-primary font-bold">0.82 ms</span>
+</div>
+<!-- Arrow -->
+<div class="flex justify-center -my-2 text-outline">
+<span class="material-symbols-outlined text-base">south</span>
+</div>
+<!-- Stage 2 -->
+<div class="flex items-center justify-between p-3.5 rounded-lg bg-surface-container-high/80">
+<div class="flex items-center gap-3">
+<span class="w-6 h-6 rounded-full bg-secondary/20 text-secondary flex items-center justify-center text-xs font-bold">2</span>
+<span class="text-on-surface">Dynamic Paged KV-Cache Fetch (HBM3e)</span>
+</div>
+<span class="text-secondary font-bold">1.10 ms</span>
+</div>
+<!-- Arrow -->
+<div class="flex justify-center -my-2 text-outline">
+<span class="material-symbols-outlined text-base">south</span>
+</div>
+<!-- Stage 3 -->
+<div class="flex items-center justify-between p-3.5 rounded-lg bg-surface-variant">
+<div class="flex items-center gap-3">
+<span class="w-6 h-6 rounded-full bg-tertiary/20 text-tertiary flex items-center justify-center text-xs font-bold">3</span>
+<span class="text-on-surface font-semibold">Triton Fused Kernel Execution (8x TP)</span>
+</div>
+<span class="text-tertiary font-bold">11.45 ms</span>
+</div>
+<!-- Arrow -->
+<div class="flex justify-center -my-2 text-outline">
+<span class="material-symbols-outlined text-base">south</span>
+</div>
+<!-- Stage 4 -->
+<div class="flex items-center justify-between p-3.5 rounded-lg bg-surface-container-high/80">
+<div class="flex items-center gap-3">
+<span class="w-6 h-6 rounded-full bg-primary-fixed/20 text-primary flex items-center justify-center text-xs font-bold">4</span>
+<span class="text-on-surface">Speculative Decoding &amp; Stream Push</span>
+</div>
+<span class="text-primary font-bold">1.43 ms</span>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/20 flex items-center justify-between text-xs text-outline font-mono-code">
+<span>Overall Speedup Factor: 12.4x</span>
+<span>Cluster Spec: 8x SXM5 H100 (80GB each)</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA BANNER SECTION -->
+<section class="w-full py-space-xl" id="contact">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="relative rounded-2xl bg-gradient-to-r from-surface-container-high via-surface-container to-surface-container-low p-8 lg:p-14 overflow-hidden shadow-2xl">
+<!-- Ambient Radial Light -->
+<div class="absolute -right-20 -bottom-20 w-80 h-80 bg-primary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -left-20 -top-20 w-80 h-80 bg-tertiary/15 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 max-w-3xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-lowest text-tertiary font-label-caps text-label-caps uppercase mb-4">
+<span class="material-symbols-outlined text-xs">handshake</span>
+<span>Available for Technical Advisory &amp; Architecture Engagements</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mb-4">
+            Ready to Scale Your Neural Infrastructure?
+          </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
+            Whether you're pre-training a domain-specific 70B model, optimizing multi-million request inference latency, or redesigning custom CUDA workloads, let's connect.
+          </p>
+<div class="flex flex-wrap items-center gap-4">
+<a class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-primary-container text-on-primary-container font-headline-sm text-body-md hover:bg-primary transition-all duration-200 shadow-xl shadow-primary-container/20" data-path="schedule-chat" href="#">
+<span class="material-symbols-outlined text-lg">calendar_month</span>
+<span>Schedule 30-Min Technical Call</span>
+</a>
+<a class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-surface-container-highest text-on-surface font-headline-sm text-body-md hover:bg-surface-variant transition-colors" data-path="contact" href="#">
+<span class="material-symbols-outlined text-lg">mail</span>
+<span>Direct Encrypted Message</span>
+</a>
+<a class="inline-flex items-center gap-2 px-4 py-3.5 rounded-xl bg-surface-container-lowest text-on-surface-variant hover:text-on-surface font-mono-code text-body-sm transition-colors" href="https://github.com" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-sm">terminal</span>
+<span>curl -s https://alexvance.ai/gpg | gpg --import</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  function switchConsoleTab(tab) {
+    const codePanel = document.getElementById('code-panel');
+    const benchPanel = document.getElementById('bench-panel');
+    const codeBtn = document.getElementById('tab-code-btn');
+    const benchBtn = document.getElementById('tab-bench-btn');
+
+    if (tab === 'code') {
+      codePanel.classList.remove('hidden');
+      benchPanel.classList.add('hidden');
+      
+      codeBtn.className = "px-4 py-2 rounded-lg bg-primary-container text-on-primary-container font-mono-code text-body-sm font-semibold transition-all shadow-sm";
+      benchBtn.className = "px-4 py-2 rounded-lg bg-surface-container-high text-on-surface-variant hover:text-on-surface font-mono-code text-body-sm transition-all";
+    } else {
+      codePanel.classList.add('hidden');
+      benchPanel.classList.remove('hidden');
+
+      benchBtn.className = "px-4 py-2 rounded-lg bg-tertiary-container text-on-tertiary-container font-mono-code text-body-sm font-semibold transition-all shadow-sm";
+      codeBtn.className = "px-4 py-2 rounded-lg bg-surface-container-high text-on-surface-variant hover:text-on-surface font-mono-code text-body-sm transition-all";
+    }
+  }
+</script></main><footer class="w-full bg-surface-container-lowest mt-space-xl shadow-[0_-1px_12px_rgba(0,0,0,0.5)]"><div class="max-w-7xl mx-auto px-6 lg:px-12 py-space-xl"><div class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-space-xl"><div class="space-y-space-sm md:col-span-1"><div class="flex items-center gap-space-sm"><img alt="ML Engineer Neural Logo" class="h-6 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U8UVFXhVzz-yTOmGZsxyZujY_DqHCfl9m1lIfhym2da9ToB6Dn1Trxpw4odt4trraj-G71yyiE6ecsZOw6Qb-UFAvBZEdTyIeMCB2SgR81T-Z0aaODmEmqH2AC9PdC_7lhriqSXAt3X6Y7-dfBmFimW8cyfFziygy32Czf0GhSD-WRhX8L4zWaliQ3B1_oF8c0SoIU9UHYYleEgw0N0jVv33Yt51uJT5kfVXykdxw_7uRFSS2VDCmtJ6XW"/><span class="font-headline-sm text-headline-sm text-on-surface">Alex Vance, PhD</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Frontier Deep Learning Systems, Distributed Transformer Pre-training &amp; Autonomous Agent Infrastructures.</p></div><div class="space-y-space-xs"><div class="font-label-caps text-label-caps text-primary uppercase">Research Artifacts</div><ul class="space-y-space-xs font-body-sm text-body-sm"><li class="flex items-center gap-1.5 text-on-surface-variant hover:text-tertiary transition-colors"><span class="material-symbols-outlined text-sm">article</span><a data-path="arxiv-citations" href="#">arXiv Publications (42)</a></li><li class="flex items-center gap-1.5 text-on-surface-variant hover:text-tertiary transition-colors"><span class="material-symbols-outlined text-sm">neurology</span><a data-path="huggingface-models" href="#">HuggingFace Checkpoints</a></li><li class="flex items-center gap-1.5 text-on-surface-variant hover:text-tertiary transition-colors"><span class="material-symbols-outlined text-sm">terminal</span><a data-path="github-repositories" href="#">Open-Source Tooling</a></li></ul></div><div class="space-y-space-xs"><div class="font-label-caps text-label-caps text-secondary uppercase">Compute Topology</div><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm text-secondary">memory</span><span>Cluster: 128x H100 SXM5</span></li><li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm text-secondary">speed</span><span>Inference: vLLM + TensorRT-LLM</span></li><li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm text-secondary">hub</span><span>Orchestration: Slurm &amp; Ray</span></li></ul></div><div class="space-y-space-sm"><div class="font-label-caps text-label-caps text-tertiary uppercase">Cluster Telemetry</div><div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-2"><div class="flex items-center justify-between"><span class="font-label-caps text-label-caps text-on-surface-variant">Status</span><span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container-high text-tertiary font-label-badge text-label-badge"><span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>All Models Operational</span></div><div class="font-mono-code text-mono-code text-on-surface-variant"><span class="text-tertiary font-semibold">99.98%</span> Uptime SLA (30d)</div></div></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md"><div class="font-mono-code text-mono-code text-on-surface-variant">© 2025 Dr. Alex Vance. Architecture licensed under Apache 2.0. Neural weights dual-licensed open-weights.</div><div class="flex items-center gap-space-md font-label-caps text-label-caps text-on-surface-variant"><span class="flex items-center gap-1 text-primary"><span class="material-symbols-outlined text-xs">dns</span>US-EAST-ACCEL-01</span><span>LATENCY: 14ms</span></div></div></div></footer></body></html>

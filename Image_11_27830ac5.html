@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>Dr. Alex Vance | Lead ML Architect &amp; AI Researcher</title><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"inverse-primary":"#494bd6","inverse-on-surface":"#233143","on-secondary-fixed-variant":"#004e5c","primary-fixed":"#e1e0ff","on-error":"#690005","on-background":"#d4e4fa","surface-variant":"#273647","error-container":"#93000a","outline-variant":"#464554","on-primary-container":"#0d0096","on-error-container":"#ffdad6","on-tertiary-fixed-variant":"#005048","surface-container-high":"#1c2b3c","inverse-surface":"#d4e4fa","surface-container":"#122131","on-secondary-container":"#00424e","on-primary":"#1000a9","outline":"#908fa0","secondary-fixed-dim":"#4cd7f6","tertiary-container":"#00a392","on-surface-variant":"#c7c4d7","on-tertiary-fixed":"#00201c","background":"#051424","primary-fixed-dim":"#c0c1ff","secondary-fixed":"#acedff","surface-bright":"#2c3a4c","tertiary":"#4fdbc8","primary":"#c0c1ff","on-primary-fixed-variant":"#2f2ebe","surface-container-highest":"#273647","on-tertiary-container":"#00302a","on-tertiary":"#003731","surface-container-lowest":"#010f1f","tertiary-fixed":"#71f8e4","surface-tint":"#c0c1ff","on-secondary-fixed":"#001f26","surface":"#051424","surface-dim":"#051424","on-primary-fixed":"#07006c","error":"#ffb4ab","primary-container":"#8083ff","tertiary-fixed-dim":"#4fdbc8","on-secondary":"#003640","secondary":"#4cd7f6","on-surface":"#d4e4fa","surface-container-low":"#0d1c2d","secondary-container":"#03b5d3"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"gutter":"1.5rem","space-xl":"2.5rem","space-lg":"1.5rem","margin-lg":"5rem","gutter-lg":"2rem","space-xs":"0.25rem","margin":"1.5rem","space-md":"1rem","margin-md":"3rem","gutter-sm":"1rem","space-sm":"0.5rem"},fontFamily:{"body-sm":["Inter"],"mono-code":["JetBrains Mono"],"label-caps":["JetBrains Mono"],"headline-sm":["Plus Jakarta Sans"],"body-md":["Inter"],"headline-lg":["Plus Jakarta Sans"],"display-hero":["Plus Jakarta Sans"],"display-hero-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"label-badge":["JetBrains Mono"],"mono-metric":["JetBrains Mono"]},fontSize:{"body-sm":["13px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"mono-code":["14px",{"lineHeight":"22px","letterSpacing":"-0.01em","fontWeight":"400"}],"label-caps":["11px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-md":["15px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"400"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.025em","fontWeight":"600"}],"display-hero":["56px",{"lineHeight":"64px","letterSpacing":"-0.03em","fontWeight":"700"}],"display-hero-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"400"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"label-badge":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"500"}],"mono-metric":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"500"}]}}}};</script></head><body class="bg-background font-body-md text-on-background antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-4"><div class="flex items-center gap-space-md shrink-0"><img alt="ML Engineer Neural Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U8UVFXhVzz-yTOmGZsxyZujY_DqHCfl9m1lIfhym2da9ToB6Dn1Trxpw4odt4trraj-G71yyiE6ecsZOw6Qb-UFAvBZEdTyIeMCB2SgR81T-Z0aaODmEmqH2AC9PdC_7lhriqSXAt3X6Y7-dfBmFimW8cyfFziygy32Czf0GhSD-WRhX8L4zWaliQ3B1_oF8c0SoIU9UHYYleEgw0N0jVv33Yt51uJT5kfVXykdxw_7uRFSS2VDCmtJ6XW"/><div class="flex flex-col"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Alex Vance, PhD</span><span class="hidden sm:inline-flex items-center px-space-xs py-0.5 rounded-full bg-surface-container-high text-secondary font-label-badge text-label-badge">ML Systems &amp; LLMs</span></div></div></div><nav class="hidden xl:flex items-center gap-space-xs p-1 rounded-xl bg-surface-container/60" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="px-3 py-1.5 text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors rounded-lg" data-path="home" href="#">Home</a><a class="px-3 py-1.5 text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors rounded-lg" data-path="about" href="#">About</a><a class="px-3 py-1.5 text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors rounded-lg" data-path="skills" href="#">Skills</a><a class="px-3 py-1.5 text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors rounded-lg" data-path="ml-projects" href="#">ML Projects</a><a aria-current="page" class="px-3 py-1.5 transition-colors bg-primary-container text-on-primary-container font-semibold rounded-lg" data-path="ai-applications" href="#">AI Applications</a><a class="px-3 py-1.5 text-body-sm font-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors rounded-lg" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md shrink-0"><div class="hidden md:flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1.5 rounded-xl"><a class="flex items-center gap-1.5 text-on-surface-variant hover:text-secondary font-label-caps text-label-caps transition-colors px-2 py-1" data-path="github-profile" href="#"><span class="material-symbols-outlined text-sm">code</span><span>GH</span><span class="px-1.5 py-0.2 rounded-full bg-surface-container-highest text-secondary-fixed">★ 3.8k</span></a><a class="flex items-center gap-1 text-on-surface-variant hover:text-secondary font-label-caps text-label-caps transition-colors px-2 py-1" data-path="linkedin-profile" href="#"><span class="material-symbols-outlined text-sm">share</span><span>IN</span></a></div><a class="hidden sm:inline-flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-primary-container text-on-primary-container font-label-caps text-label-caps hover:bg-primary transition-all shadow-[0_0_16px_rgba(128,131,255,0.25)]" data-path="schedule-chat" href="#"><span class="material-symbols-outlined text-base">calendar_month</span><span>Schedule Chat</span></a><div class="flex items-center gap-2 pl-2"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEDmLUcpYoYFK0lthnx6E8Trq3VqS1RTsnGF0poHg8IvEGqXTVmUQWKHM1WN-aCspdTAk9O-fcTnkPid6ms5ovR2yqUXDE5r6w1iPs5PhdvDU9HoTg-pUfrOIm1m-JxZ9gpxzYtS_jKhU6tryMeio_kg_SgeXB4CyxNVKE10YsRQWmsofmF7z-8QMygXHA1n_UAoCQD18XpFRFP57lstbP9Dkto1Fy-yF9U73_gPg7D3sYf3lJL_26AQ"/></div></div></div></header><main class="w-full pt-20 bg-background flex-1"><div class="flex flex-col w-full">
+<!-- Atmospheric Glow Substrate -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-40 left-1/4 w-[620px] h-[480px] bg-primary/10 rounded-full blur-[140px] pointer-events-none -z-10"></div>
+<div class="absolute top-96 right-10 w-[540px] h-[540px] bg-secondary/10 rounded-full blur-[160px] pointer-events-none -z-10"></div>
+<div class="absolute bottom-20 left-1/3 w-[460px] h-[360px] bg-tertiary/10 rounded-full blur-[130px] pointer-events-none -z-10"></div>
+<!-- Page Title & Architectural Abstract -->
+<div class="max-w-7xl mx-auto px-6 lg:px-12 pt-8 pb-12">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-8">
+<div class="max-w-3xl space-y-3">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high text-secondary font-label-badge text-label-badge">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+            ACTIVE PRODUCTION DEPLOYMENTS • CLUSTER: US-EAST-01
+          </div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+            Production AI Applications &amp; Live Telemetry
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+            Fully operational deep learning engines engineered for ultra-low latency, rigorous drift resistance, and deterministic synthetic alignment.
+          </p>
+</div>
+<!-- Live Global Cluster Telemetry Strip -->
+<div class="flex items-center gap-3 bg-surface-container-low px-4 py-3 rounded-xl shadow-sm shrink-0">
+<div class="flex flex-col pr-4">
+<span class="font-label-caps text-label-caps text-outline">GLOBAL QPS</span>
+<span class="font-mono-metric text-mono-metric text-on-surface">14,820</span>
+</div>
+<div class="w-px h-8 bg-surface-variant"></div>
+<div class="flex flex-col pr-4 pl-2">
+<span class="font-label-caps text-label-caps text-outline">CLUSTER P99</span>
+<span class="font-mono-metric text-mono-metric text-tertiary">18.4ms</span>
+</div>
+<div class="w-px h-8 bg-surface-variant"></div>
+<div class="flex flex-col pl-2">
+<span class="font-label-caps text-label-caps text-outline">ACTIVE NODES</span>
+<span class="font-mono-metric text-mono-metric text-primary">64x H100</span>
+</div>
+</div>
+</div>
+<!-- Quick Jump Ribbon -->
+<div class="flex flex-wrap items-center gap-2 pt-2 pb-6 font-mono-code text-body-sm text-on-surface-variant">
+<span class="text-outline font-label-caps text-label-caps uppercase mr-2">// Quick jump:</span>
+<a class="px-3 py-1 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface transition-all flex items-center gap-1.5" href="#neuralsearch">
+<span class="material-symbols-outlined text-sm text-primary">terminal</span> NeuralSearch Studio
+        </a>
+<a class="px-3 py-1 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface transition-all flex items-center gap-1.5" href="#synthetic-data">
+<span class="material-symbols-outlined text-sm text-secondary">dataset</span> Synthetic Contamination Benchmark
+        </a>
+<a class="px-3 py-1 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface transition-all flex items-center gap-1.5" href="#observability">
+<span class="material-symbols-outlined text-sm text-tertiary">query_stats</span> Telemetry &amp; Drift Monitor
+        </a>
+<a class="px-3 py-1 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface transition-all flex items-center gap-1.5" href="#case-study">
+<span class="material-symbols-outlined text-sm text-primary-fixed-dim">savings</span> Infrastructure Cost ROI
+        </a>
+</div>
+</div>
+<!-- 1. NEURALSEARCH STUDIO PLAYGROUND -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 py-10 scroll-mt-24" id="neuralsearch">
+<div class="flex flex-col gap-6">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps text-primary uppercase">Engine Showcase 01</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-secondary font-label-badge text-label-badge">vLLM + TensorRT Core</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface">NeuralSearch Studio: Latent Space Retrieval</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Dual-engine vector reranker and generative retrieval with dynamic KV-cache monitoring.</p>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<a class="px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-caps text-label-caps flex items-center gap-1.5 shadow-sm transition-all" href="https://huggingface.co/spaces" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-base text-tertiary">rocket_launch</span> HF Spaces
+            </a>
+<a class="px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-caps text-label-caps flex items-center gap-1.5 shadow-sm transition-all" href="https://github.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-base text-secondary">code</span> Repo
+            </a>
+</div>
+</div>
+<!-- Playground Window UI -->
+<div class="bg-surface-container-low rounded-xl p-6 sm:p-8 shadow-xl relative overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Controls Form Column -->
+<div class="lg:col-span-5 flex flex-col gap-5">
+<div class="flex items-center justify-between">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-primary">tune</span> Inference Parameter Matrix
+                </label>
+<span class="font-mono-code text-body-sm text-tertiary">STATE: ONLINE</span>
+</div>
+<!-- Model Selector -->
+<div class="space-y-2">
+<span class="font-label-caps text-label-caps text-outline">SELECT BACKBONE CHECKPOINT</span>
+<div class="grid grid-cols-2 gap-2" id="modelSelectGroup">
+<button class="px-3 py-2.5 rounded-lg bg-primary-container text-on-primary-container text-left transition-all flex flex-col shadow-sm" id="btn-llama" onclick="selectModel('llama')" type="button">
+<span class="font-headline-sm text-body-md font-semibold">Llama-3.3-70B</span>
+<span class="font-mono-code text-body-sm text-on-primary-container/80">4-bit AWQ • 8k ctx</span>
+</button>
+<button class="px-3 py-2.5 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface text-left transition-all flex flex-col shadow-sm" id="btn-mistral" onclick="selectModel('mistral')" type="button">
+<span class="font-headline-sm text-body-md font-semibold">Mistral-Large</span>
+<span class="font-mono-code text-body-sm text-outline">FP8 TensorRT • 32k</span>
+</button>
+</div>
+</div>
+<!-- Prompt Input -->
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps text-outline" for="promptInput">SYNAPTIC RETRIEVAL QUERY</label>
+<div class="relative">
+<textarea class="w-full bg-surface-container-lowest text-on-background font-mono-code text-mono-code rounded-xl p-3 focus:outline-none focus:ring-1 focus:ring-primary placeholder:text-outline/50 resize-none shadow-inner" id="promptInput" placeholder="E.g., High-throughput speculative decoding trade-offs under heterogeneous batch sizes..." rows="3">Derive multi-vector cosine ranking bounds across 1,024-dim dense embeddings under continuous batching constraints.</textarea>
+<button class="absolute bottom-2.5 right-2.5 px-2 py-1 rounded bg-surface-variant text-outline hover:text-on-surface font-label-caps text-label-caps transition-colors" onclick="loadSamplePrompt()" type="button">
+                    Sample #2
+                  </button>
+</div>
+</div>
+<!-- Slider: Embedding Distance Cutoff -->
+<div class="space-y-2 bg-surface-container/60 p-4 rounded-xl">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant">COSINE SIMILARITY EPSILON (ε)</span>
+<span class="font-mono-code text-body-sm text-secondary font-semibold" id="sliderValue">0.82 τ</span>
+</div>
+<input class="w-full accent-secondary bg-surface-variant cursor-pointer h-1.5 rounded-lg" id="distanceSlider" max="0.99" min="0.50" oninput="updateDistance(this.value)" step="0.01" type="range" value="0.82"/>
+<div class="flex justify-between font-mono-code text-label-caps text-outline">
+<span>Dense (0.50)</span>
+<span>Strict Convergence (0.99)</span>
+</div>
+</div>
+<!-- Action Execution Button -->
+<div class="flex items-center gap-3 pt-1">
+<button class="flex-1 py-3 px-4 rounded-xl bg-primary-container text-on-primary-container font-headline-sm text-body-md font-semibold flex items-center justify-center gap-2 shadow-lg hover:bg-primary transition-all" id="runBtn" onclick="simulateInference()" type="button">
+<span class="material-symbols-outlined text-lg" id="runIcon">play_arrow</span>
+<span id="runText">Execute Latent Retrieval</span>
+</button>
+<button class="p-3 rounded-xl bg-surface-container hover:bg-surface-variant text-outline hover:text-on-surface transition-colors" onclick="resetPlayground()" title="Reset" type="button">
+<span class="material-symbols-outlined text-xl">refresh</span>
+</button>
+</div>
+<!-- Telemetry Metrics Breakdown -->
+<div class="grid grid-cols-3 gap-2 p-3 bg-surface-container-lowest rounded-xl">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-outline">TTFT</span>
+<span class="font-mono-metric text-body-md font-bold text-tertiary" id="ttftMetric">14.2 ms</span>
+<span class="font-label-caps text-label-caps text-outline/70">Time-to-first</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-outline">INTER-TOKEN</span>
+<span class="font-mono-metric text-body-md font-bold text-secondary" id="interTokenMetric">3.8 ms</span>
+<span class="font-label-caps text-label-caps text-outline/70">263 tok/s</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-outline">KV ALLOC</span>
+<span class="font-mono-metric text-body-md font-bold text-primary" id="kvMetric">1.24 GB</span>
+<span class="font-label-caps text-label-caps text-outline/70">PagedAttention</span>
+</div>
+</div>
+</div>
+<!-- Terminal Output / Latency Visualizer Column -->
+<div class="lg:col-span-7 flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-inner">
+<div class="flex items-center justify-between px-4 py-2.5 bg-surface-container-high/70">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-error/70"></span>
+<span class="w-3 h-3 rounded-full bg-secondary-container/70"></span>
+<span class="w-3 h-3 rounded-full bg-tertiary/70"></span>
+<span class="font-mono-code text-body-sm text-outline ml-2">stream_stdout://cluster.vance.internal</span>
+</div>
+<span class="font-label-caps text-label-caps text-secondary px-2 py-0.5 rounded bg-surface-variant">CHUNK_STREAM: ACTIVE</span>
+</div>
+<!-- Code/Execution Output Canvas -->
+<div class="p-4 flex-1 flex flex-col justify-between font-mono-code text-body-sm leading-relaxed overflow-y-auto max-h-[340px]">
+<div class="space-y-3" id="consoleOutput">
+<div class="text-outline">
+                    [SYSTEM READY] Loaded vector index: <span class="text-tertiary font-mono-code">arxiv_ai_740k_chunked.index</span> (HNSW M=32, efConstruction=200).
+                  </div>
+<div class="text-on-surface-variant">
+<span class="text-secondary">&gt; Query embedded:</span> 1024-dim tensor normal (±0.0412) in 1.98ms.
+                  </div>
+<div class="p-3 bg-surface-container/60 rounded-lg text-on-surface">
+<div class="text-primary font-semibold mb-1 flex items-center justify-between">
+<span>Top Retrieval Match #1 [Similarity: 0.941]</span>
+<span class="text-outline text-label-caps">arXiv:2403.11289</span>
+</div>
+<p class="text-body-sm text-on-surface-variant">
+                      "Continuous Batching with Quantized Speculative Decoders: An Analysis on Kernel Fusion and KV-Cache Memory Bandwidth Saturation across Multi-GPU Topology."
+                    </p>
+</div>
+<div class="p-3 bg-surface-container/60 rounded-lg text-on-surface">
+<div class="text-primary font-semibold mb-1 flex items-center justify-between">
+<span>Top Retrieval Match #2 [Similarity: 0.887]</span>
+<span class="text-outline text-label-caps">arXiv:2311.09214</span>
+</div>
+<p class="text-body-sm text-on-surface-variant">
+                      "PagedAttention Memory Optimizations in High-Concurrency Agent Orchestration Environments."
+                    </p>
+</div>
+</div>
+<!-- Instant Latency Watermark Diagram -->
+<div class="mt-4 pt-3 bg-surface-container-high/40 p-3 rounded-lg">
+<div class="flex items-center justify-between mb-1.5 font-label-caps text-label-caps text-outline">
+<span>EXECUTION LIFECYCLE BREAKDOWN</span>
+<span class="text-on-surface">TOTAL: <strong class="text-tertiary">38.2 ms</strong></span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-variant flex overflow-hidden">
+<div class="h-full bg-secondary hover:opacity-90 transition-all" style="width: 24%;" title="Embedding Vectorization: 9.1ms"></div>
+<div class="h-full bg-primary hover:opacity-90 transition-all" style="width: 32%;" title="HNSW Vector Traversal: 12.2ms"></div>
+<div class="h-full bg-tertiary hover:opacity-90 transition-all" style="width: 38%;" title="Speculative Token Forward Pass: 14.5ms"></div>
+<div class="h-full bg-surface-bright hover:opacity-90 transition-all" style="width: 6%;" title="Serialization: 2.4ms"></div>
+</div>
+<div class="flex items-center justify-between mt-2 font-mono-code text-body-sm text-outline">
+<div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-secondary"></span>Embed (24%)</div>
+<div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-primary"></span>HNSW (32%)</div>
+<div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-tertiary"></span>Decode (38%)</div>
+<div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-surface-bright"></span>Wire (6%)</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. SYNTHETIC DATA GENERATOR & CONTAMINATION BENCHMARK -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 py-10 scroll-mt-24" id="synthetic-data">
+<div class="flex flex-col gap-6">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Engine Showcase 02</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-tertiary font-label-badge text-label-badge">Alignment &amp; Safety</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Synthetic Data Generator &amp; Contamination Benchmark</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Measuring n-gram overlap, semantic memorization, and distribution distortion against common benchmarks (MMLU, GSM8K).</p>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<a class="px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-caps text-label-caps flex items-center gap-1.5 shadow-sm transition-all" href="https://colab.research.google.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-base text-primary">terminal</span> Colab Benchmark
+            </a>
+</div>
+</div>
+<!-- 3-Column Bento Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+<!-- Generator Configuration Panel -->
+<div class="lg:col-span-4 bg-surface-container-low rounded-xl p-6 flex flex-col justify-between shadow-md">
+<div class="space-y-5">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-body-md font-semibold text-on-surface">Synthesis Parameters</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest font-mono-code text-body-sm text-secondary">N-Gram τ = 13</span>
+</div>
+<div class="space-y-3">
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant">Target Benchmark</span>
+<span class="font-mono-code text-on-surface font-semibold">GSM8K-Synthetic</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant">Rejection Sampling Ratio</span>
+<span class="font-mono-code text-tertiary font-semibold">8:1 candidate pool</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant">Reward Model Validator</span>
+<span class="font-mono-code text-primary font-semibold">ArmoRM-Llama3</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant">Contamination Ceiling</span>
+<span class="font-mono-code text-on-surface font-semibold">&lt; 0.15% 13-gram</span>
+</div>
+</div>
+<!-- Interactive Sampling Bar -->
+<div class="space-y-2 pt-2">
+<div class="flex justify-between font-label-caps text-label-caps text-outline">
+<span>SYNTHETIC PURITY INDEX</span>
+<span class="text-tertiary">99.82% CLEAN</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden flex">
+<div class="bg-tertiary h-full" style="width: 88%;"></div>
+<div class="bg-secondary h-full" style="width: 11.82%;"></div>
+<div class="bg-error h-full" style="width: 0.18%;"></div>
+</div>
+<div class="flex justify-between font-mono-code text-label-caps text-outline">
+<span>Verified Novel (88%)</span>
+<span>Paraphrased (11.8%)</span>
+<span class="text-error">Leak (0.18%)</span>
+</div>
+</div>
+</div>
+<!-- Action Controls -->
+<div class="pt-6">
+<button class="w-full py-2.5 px-4 rounded-xl bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-caps text-label-caps flex items-center justify-center gap-2 transition-all shadow-sm" onclick="triggerSyntheticSweep()" type="button">
+<span class="material-symbols-outlined text-base text-secondary">flaky</span>
+<span>Run Monte-Carlo Contamination Audit</span>
+</button>
+</div>
+</div>
+<!-- Interactive Distribution Chart -->
+<div class="lg:col-span-8 bg-surface-container-low rounded-xl p-6 flex flex-col justify-between shadow-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
+<div>
+<span class="font-label-caps text-label-caps text-outline uppercase">Density Estimation</span>
+<h3 class="font-headline-sm text-body-md font-semibold text-on-surface">Embeddings Kolmogorov-Smirnov Distribution vs. Ground Truth</h3>
+</div>
+<div class="flex items-center gap-3 font-mono-code text-body-sm">
+<span class="flex items-center gap-1.5 text-on-surface"><span class="w-3 h-0.5 bg-primary"></span>Ground Truth</span>
+<span class="flex items-center gap-1.5 text-tertiary"><span class="w-3 h-0.5 bg-tertiary"></span>Synthetic Set A</span>
+<span class="flex items-center gap-1.5 text-secondary"><span class="w-3 h-0.5 bg-secondary"></span>Distilled Set B</span>
+</div>
+</div>
+<!-- High Precision Inline SVG Distribution Chart -->
+<div class="w-full h-48 sm:h-56 relative bg-surface-container-lowest rounded-xl p-4 flex items-center">
+<svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 600 180">
+<!-- Grid Lines -->
+<line opacity="0.4" stroke="#273647" stroke-dasharray="3 3" stroke-width="1" x1="0" x2="600" y1="45" y2="45"></line>
+<line opacity="0.4" stroke="#273647" stroke-dasharray="3 3" stroke-width="1" x1="0" x2="600" y1="90" y2="90"></line>
+<line opacity="0.4" stroke="#273647" stroke-dasharray="3 3" stroke-width="1" x1="0" x2="600" y1="135" y2="135"></line>
+<!-- Distribution Curve 1: Ground Truth (Primary) -->
+<path d="M 0,165 Q 120,160 180,120 T 300,30 T 420,125 T 600,165" fill="none" opacity="0.9" stroke="#c0c1ff" stroke-width="2.5"></path>
+<!-- Distribution Curve 2: Synthetic Set A (Tertiary - Closely matches) -->
+<path d="M 0,168 Q 115,162 185,115 T 305,35 T 415,120 T 600,166" fill="none" opacity="0.85" stroke="#4fdbc8" stroke-dasharray="4 2" stroke-width="2"></path>
+<!-- Distribution Curve 3: Distilled Set B (Secondary - Flatter) -->
+<path d="M 0,160 Q 130,150 200,90 T 310,65 T 440,110 T 600,162" fill="none" opacity="0.7" stroke="#4cd7f6" stroke-width="1.8"></path>
+<!-- Area highlight on divergence point -->
+<circle cx="305" cy="35" fill="#4fdbc8" r="4"></circle>
+<circle cx="300" cy="30" fill="#c0c1ff" r="4"></circle>
+</svg>
+</div>
+<!-- Audit Metrics Row -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-4 pt-2">
+<div class="p-2.5 rounded-lg bg-surface-container">
+<span class="font-label-caps text-label-caps text-outline block">Wasserstein Dist</span>
+<span class="font-mono-metric text-body-md font-bold text-tertiary">0.0142 ± 0.001</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container">
+<span class="font-label-caps text-label-caps text-outline block">Contamination (13-g)</span>
+<span class="font-mono-metric text-body-md font-bold text-secondary">0.08% [PASSED]</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container">
+<span class="font-label-caps text-label-caps text-outline block">Entropy Preserved</span>
+<span class="font-mono-metric text-body-md font-bold text-primary">99.4% Shannon</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container">
+<span class="font-label-caps text-label-caps text-outline block">Total Samples Filtered</span>
+<span class="font-mono-metric text-body-md font-bold text-on-surface">1,400,000</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. PRODUCTION MODEL OBSERVABILITY DASHBOARD -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 py-10 scroll-mt-24" id="observability">
+<div class="flex flex-col gap-6">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps text-tertiary uppercase">Engine Showcase 03</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-primary font-label-badge text-label-badge">24/7 Cluster Telemetry</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Production Model Observability &amp; Drift Monitor</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Real-time perplexity shifts, token consumption heatmaps, and automatic pipeline failovers.</p>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-tertiary font-label-badge text-label-badge">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-ping"></span> Live Webhook Stream
+            </span>
+</div>
+</div>
+<!-- Metric Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1: Drift Detection Widget -->
+<div class="bg-surface-container-low rounded-xl p-6 shadow-md flex flex-col justify-between">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-outline">EMBEDDING SHIFT PROBABILITY</span>
+<span class="material-symbols-outlined text-secondary text-base">radar</span>
+</div>
+<div class="flex items-baseline gap-3">
+<span class="font-mono-metric text-display-hero-mobile font-bold text-on-surface">0.038</span>
+<span class="font-mono-code text-body-sm text-tertiary">Δ -0.004 (Stable)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Maximum Mean Discrepancy (MMD) test on sliding window of 50,000 requests. No semantic distribution drift detected.
+              </p>
+</div>
+<!-- Mini Sparkline inline SVG -->
+<div class="mt-6 pt-4 bg-surface-container-lowest p-3 rounded-lg">
+<div class="flex justify-between font-label-caps text-label-caps text-outline mb-2">
+<span>30-DAY DRIFT TRAJECTORY</span>
+<span class="text-tertiary">THRESHOLD 0.150</span>
+</div>
+<svg class="w-full h-12" viewbox="0 0 200 40">
+<path d="M 0,32 L 20,28 L 40,30 L 60,25 L 80,31 L 100,20 L 120,24 L 140,18 L 160,22 L 180,15 L 200,16" fill="none" stroke="#4cd7f6" stroke-width="2"></path>
+<line stroke="#ffb4ab" stroke-dasharray="2 2" stroke-width="1" x1="0" x2="200" y1="8" y2="8"></line>
+</svg>
+</div>
+</div>
+<!-- Card 2: Token Consumption Telemetry -->
+<div class="bg-surface-container-low rounded-xl p-6 shadow-md flex flex-col justify-between">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-outline">TOKEN THROUGHPUT (24H)</span>
+<span class="material-symbols-outlined text-primary text-base">data_usage</span>
+</div>
+<div class="flex items-baseline gap-3">
+<span class="font-mono-metric text-display-hero-mobile font-bold text-on-surface">4.12B</span>
+<span class="font-mono-code text-body-sm text-primary">+12.4% DoD</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Serving 63.8% input tokens / 36.2% speculative verified generation tokens with zero queue backpressure.
+              </p>
+</div>
+<!-- Token Bar Mini Breakdown -->
+<div class="mt-6 pt-4 bg-surface-container-lowest p-3 rounded-lg space-y-2">
+<div class="flex justify-between font-label-caps text-label-caps text-outline">
+<span>PROMPT CACHING EFFICIENCY</span>
+<span class="text-primary font-bold">81.6% CACHE HIT</span>
+</div>
+<div class="w-full bg-surface-variant h-2 rounded-full overflow-hidden flex">
+<div class="bg-primary h-full" style="width: 81.6%;"></div>
+<div class="bg-surface-bright h-full" style="width: 18.4%;"></div>
+</div>
+<div class="flex justify-between font-mono-code text-label-caps text-outline">
+<span>RADIX Tree Prefill: 3.36B</span>
+<span>Cold: 0.76B</span>
+</div>
+</div>
+</div>
+<!-- Card 3: Perplexity Tracking -->
+<div class="bg-surface-container-low rounded-xl p-6 shadow-md flex flex-col justify-between">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-outline">EVALUATION PERPLEXITY (PPL)</span>
+<span class="material-symbols-outlined text-tertiary text-base">show_chart</span>
+</div>
+<div class="flex items-baseline gap-3">
+<span class="font-mono-metric text-display-hero-mobile font-bold text-on-surface">4.89</span>
+<span class="font-mono-code text-body-sm text-tertiary">-0.31 (Optimal)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Evaluated against synthetic multi-turn conversations &amp; code generation test set in real-time shadow execution.
+              </p>
+</div>
+<!-- Perplexity Histogram Mini -->
+<div class="mt-6 pt-4 bg-surface-container-lowest p-3 rounded-lg">
+<div class="flex justify-between font-label-caps text-label-caps text-outline mb-2">
+<span>PPL DENSITY BUCKETS</span>
+<span class="text-on-surface">MODE: 4.8</span>
+</div>
+<div class="flex items-end gap-1.5 h-12 pt-2">
+<div class="w-full bg-surface-variant h-2 rounded-t"></div>
+<div class="w-full bg-surface-variant h-4 rounded-t"></div>
+<div class="w-full bg-tertiary/70 h-8 rounded-t"></div>
+<div class="w-full bg-tertiary h-12 rounded-t"></div>
+<div class="w-full bg-tertiary/80 h-7 rounded-t"></div>
+<div class="w-full bg-surface-variant h-3 rounded-t"></div>
+<div class="w-full bg-surface-variant h-1 rounded-t"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. CASE STUDY & INFRASTRUCTURE ROI BREAKDOWN -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 py-12 scroll-mt-24" id="case-study">
+<div class="bg-surface-container-low rounded-2xl p-8 sm:p-12 shadow-2xl relative overflow-hidden">
+<!-- Architectural Glow Ribbon inside Card -->
+<div class="absolute -right-32 -bottom-32 w-96 h-96 bg-primary/10 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="flex flex-col lg:flex-row gap-10">
+<!-- Case Study Summary -->
+<div class="lg:w-7/12 space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-highest text-secondary font-label-badge text-label-badge">
+<span class="material-symbols-outlined text-sm">verified</span>
+              CASE STUDY: PRODUCTION OPTIMIZATION
+            </div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+              Reducing LLM Infrastructure Costs by $450k/Quarter While Improving P99 Latency by 68%
+            </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+              When scaling agentic copilot features to 1.8M weekly active developers, unoptimized FP16 multi-GPU instances caused prohibitive memory-bound stalls and cost spikes. Here is the exact architectural shift deployed.
+            </p>
+<div class="space-y-4 pt-2">
+<div class="flex items-start gap-3">
+<div class="p-1 rounded bg-secondary/10 text-secondary shrink-0 mt-1">
+<span class="material-symbols-outlined text-lg">check_circle</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-body-md font-semibold text-on-surface">Radix-Tree KV-Cache Sharing via Chunked Prefill</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Reused intermediate prompt representations across related multi-turn agent execution chains, cutting redundant attention FLOPs by 44%.</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="p-1 rounded bg-tertiary/10 text-tertiary shrink-0 mt-1">
+<span class="material-symbols-outlined text-lg">check_circle</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-body-md font-semibold text-on-surface">FP8 Quantization &amp; Speculative Draft Model Pairings</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Paired an aligned 1.5B draft transformer with the 70B target engine using continuous batching on TensorRT-LLM, doubling token generation speed per node.</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="p-1 rounded bg-primary/10 text-primary shrink-0 mt-1">
+<span class="material-symbols-outlined text-lg">check_circle</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-body-md font-semibold text-on-surface">Dynamic Node Rebalancing on Slurm &amp; Ray</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Downscaled reserved GPU fleets automatically during circadian low-traffic cycles, replacing static reservations with dynamic spot compute pools.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Impact Metrics Stat Columns -->
+<div class="lg:w-5/12 flex flex-col justify-between gap-6 bg-surface-container rounded-xl p-6 sm:p-8">
+<div class="space-y-1">
+<span class="font-label-caps text-label-caps text-outline uppercase">Financial &amp; Technical Impact</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Verified Production ROI</h3>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="p-4 rounded-xl bg-surface-container-lowest flex flex-col justify-center">
+<span class="font-label-caps text-label-caps text-outline">QUARTERLY SAVINGS</span>
+<span class="font-mono-metric text-display-hero-mobile font-bold text-tertiary">$450K</span>
+<span class="font-mono-code text-body-sm text-on-surface-variant">-54% Cloud Compute</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-lowest flex flex-col justify-center">
+<span class="font-label-caps text-label-caps text-outline">P99 LATENCY</span>
+<span class="font-mono-metric text-display-hero-mobile font-bold text-secondary">-68%</span>
+<span class="font-mono-code text-body-sm text-on-surface-variant">120ms → 38.4ms</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-lowest flex flex-col justify-center">
+<span class="font-label-caps text-label-caps text-outline">GPU MEM FOOTPRINT</span>
+<span class="font-mono-metric text-display-hero-mobile font-bold text-primary">2.6x</span>
+<span class="font-mono-code text-body-sm text-on-surface-variant">Tokens Per VRAM GB</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-lowest flex flex-col justify-center">
+<span class="font-label-caps text-label-caps text-outline">CONCURRENT USERS</span>
+<span class="font-mono-metric text-display-hero-mobile font-bold text-on-surface">3.8x</span>
+<span class="font-mono-code text-body-sm text-on-surface-variant">Without Node Growth</span>
+</div>
+</div>
+<!-- BibTeX / Architectural Blueprint Copy Link -->
+<div class="p-3 bg-surface-container-lowest rounded-lg font-mono-code text-body-sm flex items-center justify-between text-on-surface-variant">
+<div class="truncate mr-2">
+<span class="text-tertiary">whitepaper:</span> "vance-2024-llm-perf-optimization.pdf"
+              </div>
+<button class="px-2.5 py-1 rounded bg-surface-variant hover:bg-surface-bright text-on-surface font-label-caps text-label-caps transition-colors shrink-0" id="copyBtn" onclick="copyBlueprintCitation()" type="button">
+                BibTeX
+              </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. DIRECT RESEARCH ARTIFACTS & LINKS MATRIX -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 py-10">
+<div class="space-y-6">
+<div class="flex items-center justify-between">
+<div class="space-y-1">
+<span class="font-label-caps text-label-caps text-outline uppercase">Open Engineering Ecosystem</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Interactive Spaces, Notebooks &amp; Checkpoints</h2>
+</div>
+<span class="font-mono-code text-body-sm text-outline hidden sm:inline">DUAL-LICENSED APACHE 2.0 / WEIGHTS OPEN</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Artifact 1: Hugging Face Spaces -->
+<a class="group p-6 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between shadow-sm" href="https://huggingface.co" rel="noopener noreferrer" target="_blank">
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<div class="p-2.5 rounded-lg bg-surface-container-highest text-secondary">
+<span class="material-symbols-outlined text-2xl">neurology</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest font-mono-code text-label-caps text-outline group-hover:text-secondary transition-colors">
+                  HF SPACE ↗
+                </span>
+</div>
+<div>
+<h3 class="font-headline-sm text-body-lg font-semibold text-on-surface group-hover:text-secondary transition-colors">
+                  Speculative Decoding Arena
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Side-by-side interactive playground comparing standard greedy sampling versus multi-head acceptance rates on synthetic instruction sets.
+                </p>
+</div>
+</div>
+<div class="pt-6 flex items-center justify-between font-mono-code text-label-caps text-outline">
+<span>Updated 3 days ago</span>
+<span class="text-tertiary">4.2k Likes</span>
+</div>
+</a>
+<!-- Artifact 2: Google Colab Benchmarks -->
+<a class="group p-6 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between shadow-sm" href="https://colab.research.google.com" rel="noopener noreferrer" target="_blank">
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<div class="p-2.5 rounded-lg bg-surface-container-highest text-primary">
+<span class="material-symbols-outlined text-2xl">terminal</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest font-mono-code text-label-caps text-outline group-hover:text-primary transition-colors">
+                  COLAB T4/A100 ↗
+                </span>
+</div>
+<div>
+<h3 class="font-headline-sm text-body-lg font-semibold text-on-surface group-hover:text-primary transition-colors">
+                  Continuous Batching Profiler
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Self-contained notebook demonstrating memory pool fragmentation, PagedAttention chunking, and latency under synthetic burst traffic.
+                </p>
+</div>
+</div>
+<div class="pt-6 flex items-center justify-between font-mono-code text-label-caps text-outline">
+<span>Free Tier Compatible</span>
+<span class="text-primary">12.1k Clones</span>
+</div>
+</a>
+<!-- Artifact 3: GitHub System Core -->
+<a class="group p-6 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between shadow-sm" href="https://github.com" rel="noopener noreferrer" target="_blank">
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<div class="p-2.5 rounded-lg bg-surface-container-highest text-tertiary">
+<span class="material-symbols-outlined text-2xl">deployed_code</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest font-mono-code text-label-caps text-outline group-hover:text-tertiary transition-colors">
+                  GITHUB REPO ↗
+                </span>
+</div>
+<div>
+<h3 class="font-headline-sm text-body-lg font-semibold text-on-surface group-hover:text-tertiary transition-colors">
+                  vance-llm-observability
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Lightweight eBPF &amp; CUDA kernel telemetry agent exporting latency histograms, cache spills, and MMD drift directly into Prometheus.
+                </p>
+</div>
+</div>
+<div class="pt-6 flex items-center justify-between font-mono-code text-label-caps text-outline">
+<span>Python / Rust / CUDA</span>
+<span class="text-tertiary">☆ 3,840</span>
+</div>
+</a>
+</div>
+</div>
+</section>
+</div>
+</div>
+<script>
+  // State machine for NeuralSearch Studio Playground Demo
+  let activeModel = 'llama';
+  
+  function selectModel(model) {
+    activeModel = model;
+    const llamaBtn = document.getElementById('btn-llama');
+    const mistralBtn = document.getElementById('btn-mistral');
+    const ttftEl = document.getElementById('ttftMetric');
+    const interTokenEl = document.getElementById('interTokenMetric');
+    const kvEl = document.getElementById('kvMetric');
+
+    if (model === 'llama') {
+      llamaBtn.className = 'px-3 py-2.5 rounded-lg bg-primary-container text-on-primary-container text-left transition-all flex flex-col shadow-sm';
+      mistralBtn.className = 'px-3 py-2.5 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface text-left transition-all flex flex-col shadow-sm';
+      ttftEl.innerText = '14.2 ms';
+      interTokenEl.innerText = '3.8 ms';
+      kvEl.innerText = '1.24 GB';
+    } else {
+      mistralBtn.className = 'px-3 py-2.5 rounded-lg bg-primary-container text-on-primary-container text-left transition-all flex flex-col shadow-sm';
+      llamaBtn.className = 'px-3 py-2.5 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface text-left transition-all flex flex-col shadow-sm';
+      ttftEl.innerText = '9.8 ms';
+      interTokenEl.innerText = '2.6 ms';
+      kvEl.innerText = '3.42 GB';
+    }
+  }
+
+  function updateDistance(val) {
+    document.getElementById('sliderValue').innerText = val + ' \u03C4';
+  }
+
+  function loadSamplePrompt() {
+    const promptArea = document.getElementById('promptInput');
+    promptArea.value = 'Compare cross-entropy alignment degradation under direct preference optimization (DPO) vs PPO with learned reference regularization.';
+  }
+
+  function simulateInference() {
+    const runBtn = document.getElementById('runBtn');
+    const runText = document.getElementById('runText');
+    const runIcon = document.getElementById('runIcon');
+    const consoleOutput = document.getElementById('consoleOutput');
+
+    runText.innerText = 'Computing Latent Vectors...';
+    runIcon.className = 'material-symbols-outlined text-lg animate-spin';
+    runBtn.classList.add('opacity-75');
+
+    setTimeout(() => {
+      const timestamp = new Date().toISOString().substring(11, 19);
+      const isLlama = activeModel === 'llama';
+      const modelName = isLlama ? 'Llama-3.3-70B-AWQ' : 'Mistral-Large-FP8';
+      const promptText = document.getElementById('promptInput').value.substring(0, 48);
+
+      const newEntry = document.createElement('div');
+      newEntry.className = 'p-3 bg-surface-container/70 rounded-lg text-on-surface transition-all';
+      newEntry.innerHTML = `
+        <div class="text-tertiary font-semibold mb-1 flex items-center justify-between">
+          <span>&gt; Completed Forward Pass [${modelName}]</span>
+          <span class="text-outline text-label-caps">${timestamp}</span>
+        </div>
+        <p class="text-body-sm text-on-surface-variant">
+          Input: "${promptText}..." &bull; Speculative Verification: <span class="text-primary font-semibold">91.4% acceptance</span> &bull; Output Stream: 142 tokens synthesized.
+        </p>
+      `;
+      consoleOutput.prepend(newEntry);
+
+      runText.innerText = 'Execute Latent Retrieval';
+      runIcon.className = 'material-symbols-outlined text-lg';
+      runBtn.classList.remove('opacity-75');
+    }, 450);
+  }
+
+  function resetPlayground() {
+    selectModel('llama');
+    document.getElementById('distanceSlider').value = 0.82;
+    updateDistance(0.82);
+    document.getElementById('promptInput').value = 'Derive multi-vector cosine ranking bounds across 1,024-dim dense embeddings under continuous batching constraints.';
+  }
+
+  function triggerSyntheticSweep() {
+    alert('Synthetic dataset Monte-Carlo contamination audit initiated on cluster [US-EAST-01]. Running 100,000 sub-sequence 13-gram permutation checks against GSM8K / MMLU.');
+  }
+
+  function copyBlueprintCitation() {
+    const bibtex = `@article{vance2024llmperf,\n  title={Production Optimizations for High-Throughput Speculative Decoding},\n  author={Vance, Alex},\n  journal={arXiv preprint arXiv:2403.11289},\n  year={2024}\n}`;
+    navigator.clipboard.writeText(bibtex).then(() => {
+      const btn = document.getElementById('copyBtn');
+      const original = btn.innerText;
+      btn.innerText = 'Copied!';
+      btn.classList.add('text-tertiary');
+      setTimeout(() => {
+        btn.innerText = original;
+        btn.classList.remove('text-tertiary');
+      }, 2000);
+    });
+  }
+</script></main><footer class="w-full bg-surface-container-lowest mt-space-xl shadow-[0_-1px_12px_rgba(0,0,0,0.5)]"><div class="max-w-7xl mx-auto px-6 lg:px-12 py-space-xl"><div class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-space-xl"><div class="space-y-space-sm md:col-span-1"><div class="flex items-center gap-space-sm"><img alt="ML Engineer Neural Logo" class="h-6 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U8UVFXhVzz-yTOmGZsxyZujY_DqHCfl9m1lIfhym2da9ToB6Dn1Trxpw4odt4trraj-G71yyiE6ecsZOw6Qb-UFAvBZEdTyIeMCB2SgR81T-Z0aaODmEmqH2AC9PdC_7lhriqSXAt3X6Y7-dfBmFimW8cyfFziygy32Czf0GhSD-WRhX8L4zWaliQ3B1_oF8c0SoIU9UHYYleEgw0N0jVv33Yt51uJT5kfVXykdxw_7uRFSS2VDCmtJ6XW"/><span class="font-headline-sm text-headline-sm text-on-surface">Alex Vance, PhD</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Frontier Deep Learning Systems, Distributed Transformer Pre-training &amp; Autonomous Agent Infrastructures.</p></div><div class="space-y-space-xs"><div class="font-label-caps text-label-caps text-primary uppercase">Research Artifacts</div><ul class="space-y-space-xs font-body-sm text-body-sm"><li class="flex items-center gap-1.5 text-on-surface-variant hover:text-tertiary transition-colors"><span class="material-symbols-outlined text-sm">article</span><a data-path="arxiv-citations" href="#">arXiv Publications (42)</a></li><li class="flex items-center gap-1.5 text-on-surface-variant hover:text-tertiary transition-colors"><span class="material-symbols-outlined text-sm">neurology</span><a data-path="huggingface-models" href="#">HuggingFace Checkpoints</a></li><li class="flex items-center gap-1.5 text-on-surface-variant hover:text-tertiary transition-colors"><span class="material-symbols-outlined text-sm">terminal</span><a data-path="github-repositories" href="#">Open-Source Tooling</a></li></ul></div><div class="space-y-space-xs"><div class="font-label-caps text-label-caps text-secondary uppercase">Compute Topology</div><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm text-secondary">memory</span><span>Cluster: 128x H100 SXM5</span></li><li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm text-secondary">speed</span><span>Inference: vLLM + TensorRT-LLM</span></li><li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm text-secondary">hub</span><span>Orchestration: Slurm &amp; Ray</span></li></ul></div><div class="space-y-space-sm"><div class="font-label-caps text-label-caps text-tertiary uppercase">Cluster Telemetry</div><div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-2"><div class="flex items-center justify-between"><span class="font-label-caps text-label-caps text-on-surface-variant">Status</span><span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container-high text-tertiary font-label-badge text-label-badge"><span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>All Models Operational</span></div><div class="font-mono-code text-mono-code text-on-surface-variant"><span class="text-tertiary font-semibold">99.98%</span> Uptime SLA (30d)</div></div></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md"><div class="font-mono-code text-mono-code text-on-surface-variant">© 2025 Dr. Alex Vance. Architecture licensed under Apache 2.0. Neural weights dual-licensed open-weights.</div><div class="flex items-center gap-space-md font-label-caps text-label-caps text-on-surface-variant"><span class="flex items-center gap-1 text-primary"><span class="material-symbols-outlined text-xs">dns</span>US-EAST-ACCEL-01</span><span>LATENCY: 14ms</span></div></div></div></footer></body></html>
