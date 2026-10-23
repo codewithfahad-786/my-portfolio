@@ -13,7 +13,7 @@ import {
   TrendingUp,
   DollarSign
 } from 'lucide-react';
-import { PROJECTS, Project } from './data/portfolioData';
+import { PROJECTS } from "./portfolioData";
 
 interface ProjectsProps {
   onOpenDemo: (project: Project) => void;
