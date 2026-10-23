@@ -11,7 +11,7 @@ import {
   Layers,
   ArrowRight
 } from 'lucide-react';
-import { SKILL_CATEGORIES } from '../data/portfolioData';
+import { SKILL_CATEGORIES } from "./portfolioData";
 
 export const Skills: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
