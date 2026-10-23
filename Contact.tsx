@@ -13,7 +13,7 @@ import {
   MessageSquare,
   Sparkles
 } from 'lucide-react';
-import { PERSONAL_INFO } from '../data/portfolioData';
+import { PERSONAL_INFO } from './data/portfolioData';
 
 interface FormState {
   name: string;
