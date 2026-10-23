@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import { 
   Mail, 
   Send, 
@@ -15,6 +16,9 @@ import {
 } from 'lucide-react';
 import { PERSONAL_INFO } from "./portfolioData";
 
+const EMAILJS_SERVICE_ID = 'service_flt2zvk';
+const EMAILJS_TEMPLATE_ID = 'template_jbka4pb';
+const EMAILJS_PUBLIC_KEY = '3M2xrnmGtDaa4ahRY';
 interface FormState {
   name: string;
   email: string;
@@ -74,25 +78,45 @@ export const Contact: React.FC = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!validate()) return;
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
 
-    setIsSubmitting(true);
+  if (!validate()) return;
 
-    // Simulate sending network request
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSubmitted(true);
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
-      });
-      setErrors({});
-    }, 900);
-  };
+  setIsSubmitting(true);
+
+  try {
+    await emailjs.send(
+      EMAILJS_SERVICE_ID,
+      EMAILJS_TEMPLATE_ID,
+      {
+        name: formData.name.trim(),
+        email: formData.email.trim(),
+        subject: formData.subject.trim(),
+        message: formData.message.trim(),
+      },
+      {
+        publicKey: EMAILJS_PUBLIC_KEY,
+      }
+    );
+
+    setIsSubmitted(true);
+
+    setFormData({
+      name: '',
+      email: '',
+      subject: '',
+      message: '',
+    });
+
+    setErrors({});
+  } catch (error) {
+    console.error('EmailJS error:', error);
+    alert('Email send nahi hui. Please dobara try karein.');
+  } finally {
+    setIsSubmitting(false);
+  }
+};
 
   const copyEmail = () => {
     navigator.clipboard.writeText(PERSONAL_INFO.email);
