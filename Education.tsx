@@ -9,7 +9,7 @@ import {
   Sparkles,
   Binary
 } from 'lucide-react';
-import { EDUCATION_DATA } from '../data/portfolioData';
+import { EDUCATION_DATA } from "./portfolioData";
 
 export const Education: React.FC = () => {
   return (
