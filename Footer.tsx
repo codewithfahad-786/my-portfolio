@@ -1,6 +1,6 @@
 import React from 'react';
 import { Github, ExternalLink, ArrowUp, Heart, Terminal, MapPin } from 'lucide-react';
-import { PERSONAL_INFO } from './data/portfolioData';
+import { PERSONAL_INFO } from "./data/portfolioData";
 
 export const Footer: React.FC = () => {
   const scrollToTop = () => {
