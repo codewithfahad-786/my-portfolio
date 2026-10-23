@@ -13,7 +13,7 @@ import {
   GraduationCap,
   Play
 } from 'lucide-react';
-import { PERSONAL_INFO } from '../data/portfolioData';
+import { PERSONAL_INFO } from "./portfolioData";
 
 export const Hero: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'train' | 'vision' | 'metrics'>('train');
