@@ -10,7 +10,7 @@ import {
   Layers,
   ArrowUpRight
 } from 'lucide-react';
-import { PERSONAL_INFO } from '../data/portfolioData';
+import { PERSONAL_INFO } from './data/portfolioData';
 
 export const About: React.FC = () => {
   const pillars = [
